@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
+import Greeting from "../components/greeting";
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -12,6 +14,7 @@ export default function Home() {
       </Head>
       <main>
         <nav>hello_world</nav>
+        <Greeting message={"Welcome back"} name={"Perry"}></Greeting>
       </main>
     </div>
   );
